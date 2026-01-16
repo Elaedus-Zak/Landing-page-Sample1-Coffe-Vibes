@@ -138,7 +138,7 @@ input{
   border: none;
   border-radius: 50%;
   background-repeat: no-repeat;
-  margin-left: 300px;
+  margin-left: auto;
 
 }
 #morebutton:hover{
