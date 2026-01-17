@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito.ttf');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #521414;
+  color: white;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px; /* vertical | horizontal padding */
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px;
+
+  display: flex;          /* Flexbox for buttons row */
+   /* Center buttons horizontally */
+  align-items: center;     /* Center buttons vertically */
+  gap: 50px;               /* Space between buttons */
+  
+  
+  position: fixed;
+  
+  width: 96.9%;
+  z-index: 1000;
+
+}
+
+section {
+  padding: 273px;
+  background-image: url(images/homeimg.png);
+             /* same as header border-radius */
+  padding-top: 244px;
+  padding-bottom: 244px;           
+  
+}
+div{
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Nunito";
+  size-adjust: none;
+  
+}
+
+
+
+
+footer {
+  background: #521414;
+  color: white;
+  text-align: center;
+  padding: auto;
+  
+  display :flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  
+  
+  
+  
+
+  
+}
+footer p{
+  padding : 15px;
+}
+h1{
+    font-family:"Nunito";
+    
+}
+button{
+    background-color: #af1e26;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px; /* vertical horizontal */
+    font-size: 16px;
+    font-family:"Nunito";
+    border-radius: 50px;
+    border: 0px;
+    
+    margin-top: 0px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    
+    
+    
+    
+}
+div button {
+  display: flex; 
+  margin-left: auto;
+}
+button:hover{
+    background-color: #921a20;
+    
+}
+button:active{
+    background-color: #74151a;
+}
+#menu{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3,1fr);
+  grid-row:auto;
+  align-content: start;
+  padding: 30px;
+  gap :40px;
+  
+  
+}
+#NOTE{
+  background-color: rgb(34, 33, 33);
+  text-align: center;
+  color: white;
+  padding: 1px;
+}
+input{
+  padding: 10px;
+  border-radius: 50px;
+  border-color: black;
+  border: solid;
+  margin: 10px;
+}
+#submit{
+  border-radius: 20px;
+  border-color: black;
+  border: solid;
+  margin: 10px;
+  resize: none;
+  padding: 10px;
+  font-family: "Nunito";
+  
+}
+#contactF{
+  display :grid;
+}  
+#morebutton{
+  background-image: url(images/menuicon.png);
+  
+  width: 50px;
+  height : 50px;
+  background-color: rgba(255, 255, 255, 0);
+  background-size:80% ;
+  background-position: center;
+  
+  border: none;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-left: auto;
+
+}
+#morebutton:hover{
+  background-color: rgba(255, 255, 255, 0.185);
+}
+#morebutton:active{
+  background-color: rgba(255, 255, 255, 0.418);
+}
+#sidemenu{
+  position: fixed;
+  top:0;
+  right:-330px;
+  width: 280px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  transition: right 0.3s ease;
+  border-top-right-radius: 0px;
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  
+  
+}
+#sidemenu.open{
+  right:0;
+  
+  
+}
+#sidemenu.close{
+  right:-330px;
+  
+}
+#closebtn{
+  background-image: url(images/xicon.png);
+  margin-top: 20px;
+  width: 50px;
+  height : 50px;
+  background-color: rgba(255, 255, 255, 0);
+  background-size:60% ;
+  background-position: center;
+  margin-right: 40px;
+  border: none;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-left: auto;
+
+}
+#closebtn:hover{
+  background-color: rgba(255, 255, 255, 0.185);
+}
+#closebtn:active{
+  background-color: rgba(255, 255, 255, 0.418);
+}
+#spacer{
+  padding:50px
+}
+.morebuttons{
+  
+  margin-left:0;
+  margin-right: 120%;
+  width: 150%;
+  align-self:flex-end;
+  border-radius: 0px;
+  margin:0;
+  background-color: black;
+  color:white;
+  z-index: 2000;
+  
+}
+.morebuttons:hover{
+  background-color: rgba(255, 255, 255, 0.185);
+}
+.morebuttons:active{
+  background-color: rgba(255, 255, 255, 0.418);
+}
+#sidemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#sidemenu h2{
+  padding: 30px;
+}
+#blurer{
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 0;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+#blurer.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.sidelist{
+  padding: 0px;
+  min-height: auto;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  top: -100px;
+}
+
+.subbtn{
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  transition: top 0.3s ease;
+  top:-100px;
+}
+.subbtn.show{
+  top :100%
+}
