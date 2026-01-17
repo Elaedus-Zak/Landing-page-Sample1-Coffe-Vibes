@@ -9,20 +9,21 @@
     <header>
         <h1>Coffee Vibes</h1>
         
-        <button onclick="document.location='../index.html'">Home</button>
-        <button onclick="document.location='menu.html'">Menu</button>
-        <button onclick="document.location='about.html'">About</button>
-        <button onclick="document.location='contact.html'">Contact</button>
+        <button class="headbutton" onclick="document.location='../index.html'">Home</button>
+        <button class="headbutton" onclick="document.location='menu.html'">Menu</button>
+        <button class="headbutton" onclick="document.location='about.html'">About</button>
+        <button class="headbutton" onclick="document.location='contact.html'">Contact</button>
         <button id="morebutton"></button>
         
     </header>
     <div id="sidemenu">
         <button id="closebtn"></button>
-        <h2>More</h2>
+        <h2>Navigation</h2>
         <ul>
-            <button class="morebuttons">🗺️ Locations</button>
-            <button class="morebuttons">⚙️ Settings</button>
-            <button class="morebuttons">🌐 Language</button>
+            <a class="morebuttons" href="../index.html">Home</a><br>
+            <a class="morebuttons" href="menu.html">Menu</a><br>
+            <a class="morebuttons" href="about.html">About</a><br>
+            <a class="morebuttons" href="contact.html">Contact</a>
         </ul>
     </div> 
     <section id="about">
